@@ -23,7 +23,7 @@
 (Breast Cancer Dataset [https://www.kaggle.com/datasets/imtkaggleteam/breast-cancer])
 
 Pertama-tama kita akan mengimport library yang di butuhkan
-'''import pandas as pd
+''' import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -31,5 +31,5 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import OrdinalEncoder'''
+from sklearn.preprocessing import OrdinalEncoder '''
 
