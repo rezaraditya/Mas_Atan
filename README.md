@@ -305,3 +305,5 @@ pickle.dump(classifier, open(filename,'wb'))
 
 ## Deployment
 
+https://masatan-prediksi-jenis-kanker-payudara.streamlit.app/
+
