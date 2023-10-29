@@ -87,37 +87,69 @@ df.info()
 
 ### Penjelasan Variabel pada Breast Cancer Dataset yaitu:
 -id                     : Nomor pengenal dari pasien  [Bertipe: int64]
+
 -diagnosis              : Jenis dari kanker yang di idap kanker ganas atau jinak  [Bertipe: object]
+
 -radius_mean            : Ini adalah rata-rata jarak dari pusat tumor ke tepi tumor  [Bertipe: float64]
+
 -texture_mean           : Ini adalah rata-rata nilai intensitas tekstur sel-sel  [Bertipe: float64]
+
 -perimeter_mean         : Ini adalah rata-rata panjang kontur tumor.  [Bertipe: float64]
+
 -area_mean              : Ini adalah rata-rata area daerah dalam satu tumor. [Bertipe: float64]
+
 -smoothness_mean        : Ini adalah rata-rata kehalusan permukaan sel-sel tumor. [Bertipe: float64]
+
 -compactness_mean       : Ini adalah rata-rata seberapa kompak atau rapat sel-sel tumor. [Bertipe: float64]
+
 -concavity_mean         : Ini adalah rata-rata sejauh mana tepi tumor cekung.  [Bertipe: float64]
+
 -concave points_mean    : Ini adalah rata-rata jumlah titik cekung pada tepi tumor.  [Bertipe: float64]
+
 -symmetry_mean          : Ini adalah rata-rata simetri sel-sel tumor. [Bertipe: float64]
+
 -fractal_dimension_mean : Ini adalah rata-rata dimensi fraktal  [Bertipe: float64]
+
 -radius_se              : Ini adalah kesalahan standar dari jarak dari pusat tumor ke tepi tumor.  [Bertipe: float64]
+
 -texture_se             : Ini adalah kesalahan standar dari intensitas tekstur sel-sel dalam gambar.  [Bertipe: float64]
+
 -perimeter_se           : Ini adalah kesalahan standar dari panjang kontur tumor.  [Bertipe: float64]
+
 -area_se                : Ini adalah kesalahan standar dari area daerah dalam satu tumor. [Bertipe: float64]
+
 -smoothness_se          : Ini adalah kesalahan standar dari kehalusan permukaan sel-sel tumor.  [Bertipe: float64]
+
 -compactness_se         : Ini adalah kesalahan standar dari kompakitas sel-sel tumor.  [Bertipe: float64]
+
 -concavity_se           : Ini adalah kesalahan standar dari sejauh mana tepi tumor cekung.  [Bertipe: float64]
+
 -concave points_se      : Ini adalah kesalahan standar dari jumlah titik cekung pada tepi tumor.  [Bertipe: float64]
+
 -symmetry_se            : Ini adalah kesalahan standar dari simetri sel-sel tumor.  [Bertipe: float64]
+
 -fractal_dimension_se   : Ini adalah kesalahan standar dari dimensi fraktal sel-sel tumor.  [Bertipe: float64]
+
 -radius_worst           : Ini adalah nilai terburuk (terbesar) dari jarak dari pusat tumor ke tepi tumor.  [Bertipe: float64]
+
 -texture_worst          : Ini adalah nilai terburuk (terbesar) dari intensitas tekstur sel-sel dalam gambar.  [Bertipe: float64]
+
 -perimeter_worst        : Ini adalah nilai terburuk (terbesar) dari panjang kontur tumor.  [Bertipe: float64]
+
 -area_worst             : Ini adalah nilai terburuk (terbesar) dari area daerah dalam satu tumor.  [Bertipe: float64]
+
 -smoothness_worst       : Ini adalah nilai terburuk (terbesar) dari kehalusan permukaan sel-sel tumor.  [Bertipe: float64]
+
 -compactness_worst      : Ini adalah nilai terburuk (terbesar) dari kompakitas sel-sel tumor.  [Bertipe: float64]
+
 -concavity_worst        : Ini adalah nilai terburuk (terbesar) dari sejauh mana tepi tumor cekung.  [Bertipe: float64]
+
 -concave points_worst   : Ini adalah nilai terburuk (terbesar) dari jumlah titik cekung pada tepi tumor.  [Bertipe: float64]
+
 -symmetry_worst         : Ini adalah nilai terburuk (terbesar) dari simetri sel-sel tumor.  [Bertipe: float64]
+
 -fractal_dimension_worst: Ini adalah nilai terburuk (terbesar) dari dimensi fraktal sel-sel tumor. [Bertipe: float64]
+
 -Unnamed: 32            : kolom yang tidak memiliki label atau informasi yang jelas dalam dataset. [Bertipe: float64]
 
 Mendrop kolom yang berisi NaN agar tidak terjadi error pada saaat sedang memasukan kode classifier fit
