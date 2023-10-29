@@ -152,12 +152,13 @@ df.info()
 
 -Unnamed: 32            : kolom yang tidak memiliki label atau informasi yang jelas dalam dataset. [Bertipe: float64]
 
+
 Mendrop kolom yang berisi NaN agar tidak terjadi error pada saaat sedang memasukan kode classifier fit
 ```python
 df = df.drop('Unnamed: 32', axis=1)
 ```
 
-Fungsi ini di pakai untuk menghitung nilai yang ada di atribut "diagnosis", seperti menghitung jumlah pasien yang terkena kanker Benign(jinak) atau Malignant(Ganas) pada payudara
+Masukan Fungsi ini di pakai untuk menghitung nilai yang ada di atribut "diagnosis", seperti menghitung jumlah pasien yang terkena kanker Benign(jinak) atau Malignant(Ganas) pada payudara
 ```python
 df['diagnosis'].value_counts()
 ```
@@ -178,12 +179,12 @@ menampilkan Output label(Y), datanya sudah terpisah
 print(Y)
 ```
 ## Standarisasi data
-fungsi scaler di gunakan untuk menstandarisasi data, dimana data yang akan saya standarisasi yaitu data (X)
+Masukan fungsi scaler di gunakan untuk menstandarisasi data, dimana data yang akan saya standarisasi yaitu data (X)
 ```python
 scaler = StandardScaler()
 ```
 
-Fungsi untuk mentransformasi data (X)
+Masukan Fungsi untuk mentransformasi data (X)
 ```python
 scaler.fit(X)
 ```
@@ -208,18 +209,18 @@ print(X)
 print(Y)
 ```
 ## Memisahkan data train dan test
-Fungsi untuk mengidentifikasi variabel training dan testing
+Masukan Fungsi untuk mengidentifikasi variabel training dan testing
 ```python
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=2)
 ```
 
-Fungsi untuk memisahkan antara data training dan data testing, yaitu data trainingnya ada 455, dan data testingnya ada 114
+Masukan Fungsi untuk memisahkan antara data training dan data testing, yaitu data trainingnya ada 455, dan data testingnya ada 114
 ```python
 print(X.shape, X_train.shape, X_test.shape)
 ```
 
 ## Membuat data latih menggunakan SVM
-Fungsi untuk mengimplementasikan atau memasukan algoritmah svm.SVC pada data X_train dan Y_train
+Masukan Fungsi untuk mengimplementasikan atau memasukan algoritmah svm.SVC pada data X_train dan Y_train
 ```python
 classifier = svm.SVC(kernel='linear')
 ```
@@ -228,7 +229,7 @@ classifier.fit(X_train, Y_train)
 ```
 
 ## Membuat model evaluasi untuk mengukur tingkat akurasi
-Fungsi untuk melihat akurasi training yang mencakup data X_train dan Y_train
+Masukan Fungsi untuk melihat akurasi training yang mencakup data X_train dan Y_train
 ```python
 X_train_prediction = classifier.predict(X_train)
 training_data_accuracy = accuracy_score(X_train_prediction, Y_train)
@@ -240,7 +241,7 @@ print('Akurasi data training adalah =',training_data_accuracy)
 ```
 Akurasi data training adalah = 0.989010989010989
 
-Fungsi untuk melihat akurasi pada data testing yaitu mencakup data X_test dan Y_test
+Masukan Fungsi untuk melihat akurasi pada data testing yaitu mencakup data X_test dan Y_test
 ```python
 X_test_prediction = classifier.predict(X_test)
 test_data_accuracy = accuracy_score(X_test_prediction, Y_test)
@@ -278,7 +279,9 @@ else :
    0.07524305  0.10748154 -0.0173632  -0.1613566   0.82281333 -0.03160911
   -0.24836341  1.66275699  1.81830968  1.28003453  1.39161624  2.38985717
    1.28864955]]
+   
 ['M']
+
 kanker ganas
 
 
@@ -291,7 +294,7 @@ for col_n in col:
 ```
 
 ## Simpan Model
-Fungsi untuk menyimpan file prediksi jenis kanker payudara berjenis SAV,untuk nanti saya pakai pada streamlit
+Masukan Fungsi untuk menyimpan file prediksi jenis kanker payudara berjenis SAV,untuk nanti saya pakai pada streamlit
 ```python
 import pickle
 ```
@@ -301,3 +304,4 @@ pickle.dump(classifier, open(filename,'wb'))
 ```
 
 ## Deployment
+
