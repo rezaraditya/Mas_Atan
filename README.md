@@ -33,5 +33,36 @@ from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import OrdinalEncoder
-'''
+```
+
+Selanjutnya saya mengupload file kaggle.json agar bisa mendapatkan akses pada kaggle
+```python
+from google.colab import files
+files.upload()
+```
+
+Setelah itu saya membuat direktori dan izin akses pada skrip ini
+```python
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+!ls ~/.kaggle
+```
+
+Lalu mendownload Dataset yang sudah di pilih
+```python
+!kaggle datasets download -d imtkaggleteam/breast-cancer
+```
+
+Karena dataset yang terdownload berbentuk ZIP, maka kita Unzip terlebih dahulu datasetnya
+```python
+!mkdir breast-cancer
+!unzip breast-cancer.zip -d breast-cancer
+!ls breast-cancer
+```
+
+memanggil data CSV yang telah di unzip
+```phtyon
+df = pd.read_csv('/content/breast-cancer/breast-cancer-wisconsin-data_data.csv')
+```
 
