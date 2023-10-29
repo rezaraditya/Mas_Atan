@@ -1,4 +1,6 @@
-# Laporan Proyek Machine Learning
-### Nama : Fathan Naufal R
-### Nim : 211351054
-### Kelas : Informatika Pagi B
+# Laporan Tugas Machine Learning
+## Nama : Fathan Naufal R
+## NIM : 211351054
+## Kelas : Informatika Pagi B
+
+
