@@ -23,7 +23,7 @@
 (Breast Cancer Dataset [https://www.kaggle.com/datasets/imtkaggleteam/breast-cancer])
 
 Pertama-tama kita akan mengimport library yang di butuhkan
-''' python
+``` python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
